@@ -48,17 +48,11 @@
 
     trackball_central: trackball_central@0 {
         status = "okay";
-        compatible = "pixart,pmw3610";  //トラボセンサ用のドライバとバインド
+        compatible = "pixart,pmw3320";  //トラボセンサ用のドライバとバインド
         reg = <0>;
-        spi-max-frequency = <2000000>;
+        spi-max-frequency = <1000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
-        cpi = <600>;
-        //swap-xy;
-        //invert-x; //COROPIT版ではコメントアウトを外す
-        //invert-y; //COROPIT版ではコメントアウトを外す
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
+        
     };
 };
 
@@ -78,4 +72,24 @@
             <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
     };
 
+};
+/ {
+    aliases {
+        led-red   = &led_red_node;
+        led-green = &led_green_node;
+        led-blue  = &led_blue_node;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        led_red_node: led_red {
+            gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
+        };
+        led_green_node: led_green {
+            gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
+        };
+        led_blue_node: led_blue {
+            gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+        };
+    };
 };
