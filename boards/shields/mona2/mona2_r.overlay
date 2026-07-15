@@ -47,7 +47,7 @@
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;  //P0.09を指定(CS)
 
     trackball_central: trackball_central@0 {
-        status = "okay";
+        status = "disabled";  //切り分けのため一旦センサー自体を無効化(BLE安定性への影響を検証)
         compatible = "pixart,pmw3320";  //トラボセンサ用のドライバとバインド
         reg = <0>;
         spi-max-frequency = <1000000>;
