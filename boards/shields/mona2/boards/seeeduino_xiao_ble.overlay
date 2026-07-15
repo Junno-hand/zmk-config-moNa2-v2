@@ -1,0 +1,18 @@
+/*
+ * seeeduino_xiao_ble はデフォルトで物理UART0をコンソールにしているため、
+ * xiao_ble と同様にUSB CDC-ACMをコンソールとして使えるように追加定義する。
+ * (デバッグ用ログ取得のため)
+ */
+
+/ {
+	chosen {
+		zephyr,console = &usb_cdc_acm_uart;
+		zephyr,shell-uart = &usb_cdc_acm_uart;
+	};
+};
+
+&usbd {
+	usb_cdc_acm_uart: cdc-acm-uart {
+		compatible = "zephyr,cdc-acm-uart";
+	};
+};
