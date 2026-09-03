@@ -27,8 +27,8 @@ layers:
   - C
   - V
   - B
-  - LANGUAGE 5
-  - F15
+  - LANG ZENKAKUHANKAKU
+  - B
   - N
   - M
   - ','
@@ -36,11 +36,11 @@ layers:
   - {t: '-', h: RIGHT SHIFT}
   - LCTRL
   - LEFT WIN
-  - F16
+  - {t: '1', h: toggle}
+  - DELETE
   - BACKSPACE
-  - BACKSPACE
-  - {t: '&to_layer_0 ENTER', h: '1'}
-  - {t: '&to_layer_0 SPACE', h: '2'}
+  - {t: '&to_layer_0 SPACE', h: '1'}
+  - {t: '&to_layer_0 ENTER', h: '2'}
   - {t: RIGHT SHIFT, h: '3'}
   - LEFT ALT
   '1':
@@ -79,8 +79,8 @@ layers:
   - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '2', h: toggle}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -122,8 +122,8 @@ layers:
   - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '3', h: toggle}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -165,8 +165,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '4', h: toggle}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,8 +208,8 @@ layers:
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '5', h: toggle}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
@@ -251,8 +251,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '6', h: toggle}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -294,7 +294,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
