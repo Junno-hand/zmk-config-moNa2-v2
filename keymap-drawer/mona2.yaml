@@ -16,7 +16,7 @@ layers:
   - D
   - F
   - G
-  - F13
+  - /
   - H
   - J
   - K
@@ -27,7 +27,7 @@ layers:
   - C
   - V
   - B
-  - LANG ZENKAKUHANKAKU
+  - LANGUAGE 2
   - B
   - N
   - M
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
-  - {t: ▽, type: trans}
+  - Gui+UP ARROW
   - Ctl+Sft+TAB
   - PRINTSCREEN
   - Ctl+TAB
@@ -140,7 +140,7 @@ layers:
   - UP ARROW
   - END
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+DOWN ARROW
   - Gui+LEFT ARROW
   - Gui+RIGHT ARROW
   - Ctl+Gui+LEFT ARROW
@@ -157,8 +157,8 @@ layers:
   - Gui+Sft+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - AltGr+LEFT ARROW
+  - AltGr+RIGHT ARROW
   - DELETE
   - PAGE UP
   - PAGE DOWN
@@ -251,7 +251,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '6', h: toggle}
+  - {t: default, h: toggle}
   - {t: default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
