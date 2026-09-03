@@ -27,7 +27,7 @@ layers:
   - C
   - V
   - B
-  - LANGUAGE 2
+  - {t: LANGUAGE 1, h: LANGUAGE 2}
   - B
   - N
   - M
@@ -49,11 +49,11 @@ layers:
   - '3'
   - '4'
   - '5'
-  - '6'
+  - /
   - '7'
   - '8'
   - '9'
-  - '0'
+  - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
@@ -61,22 +61,22 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - (
   - )
   - {t: ▽, type: trans}
-  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '|'
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '2', h: toggle}
@@ -85,7 +85,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - .
   '2':
   - '!'
   - '@'
@@ -101,7 +101,7 @@ layers:
   - '~'
   - '"'
   - ''''
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - '&mkp MB3'
   - '&mkp MB1'
